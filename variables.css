@@ -1,0 +1,18 @@
+:root{
+    --unit: 1rem;
+
+    --font-size-xs: calc(0.5 * var(--font-size-md));
+    --font-size-md: var(--unit);
+    --font-size-xl: calc(1.5 * var(--font-size-md));
+    --font-size-xxl: calc(2 * var(--font-size-md));
+
+    --width-0: 0;
+    --width-px: 1px;
+    --widht-full: 100%;
+    --widht-1: calc(0.25 * var(--widht-4)) ;
+    --widht-2: calc(0.5 * var(--widht-4)) ;
+    --widht-3: calc(0.75 * var(--widht-4)) ;
+    --widht-4: var(--unit) ;
+
+
+}
