@@ -24,13 +24,20 @@ body {
   .navbar-ruby, .navbar-phyton, .navbar-main, .navbar-java, .navbar-javascript {
     text-decoration: none;
     color: var(--color-lightblue);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-md) !important ;
     display: block;
     
   }
   .navbar-ruby:hover, .navbar-phyton:hover, .navbar-main:hover, .navbar-java:hover, .navbar-javascript:hover {
     color: var(--color-grayblue);
   }
+
+  .navbar-main{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl) !important ;
+    }
+
   /* 
   
   padding: 10px 15px;

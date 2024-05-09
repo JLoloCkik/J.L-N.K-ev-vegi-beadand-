@@ -27,9 +27,27 @@
     
     --border-radius: calc( 2 * var(--unit)) ;
 
-    --color-darkblue: rgb(30, 3, 66);
+    --color-darkblue: rgb(77, 134, 156);
+    --color-blue:rgb(122, 178, 178);
+    --color-lightblue:rgb(205, 232, 229);
+    --color-grayblue:rgb(238, 247, 255); 
+
+}
+
+/*            
+
+
+--color-darkblue: rgb(77, 134, 156);
+    --color-blue:rgb(122, 178, 178);
+    --color-lightblue:rgb(205, 232, 229);
+    --color-grayblue:rgb(238, 247, 255);
+
+--color-darkblue: rgb(30, 3, 66);
     --color-blue:rgb(14, 70, 163);
     --color-lightblue:rgb(154, 200, 205);
     --color-grayblue:rgb(225, 247, 245);
 
-}
+
+
+
+*/
