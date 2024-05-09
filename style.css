@@ -1,12 +1,27 @@
-.asd{
-    font-size: var(--font-size-xs) ;
+.nav-item{
+padding-left: var(--padding);
+padding-right: var(--padding);
 }
-.aa{
-    font-size: var(--font-size-md) ;
+.container-fluid{
+background-color:var(--color-blue) ;
+
 }
-.ss{
-    font-size: var(--font-size-xl);
+.nav-item-ruby,.nav-item-phyton,.nav-item-javascript,.nav-item-java  {
+
+background-color: var(--color-lightblue);
+font-size: var(--font-size-xl);
+ 
 }
-.bb{
-    font-size: var(--font-size-xxl); ;
+.nav-item-java{
+border-top-left-radius: var(--border-radius) ;
+border-bottom-left-radius: var(--border-radius) ;
 }
+.navbar-brand{
+color:  var(--color-grayblue);
+font-size: var(--font-size-xxl);
+
+}
+.navbar-brand:hover{
+    color:  var(--color-lightblue);
+    
+    }

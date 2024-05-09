@@ -14,5 +14,17 @@
     --widht-3: calc(0.75 * var(--widht-4)) ;
     --widht-4: var(--unit) ;
 
+    
+    --font-padding-xs: calc(0.5 * var(--font-padding-md));
+    --font-padding-md: var(--unit);
+    --font-padding-xl: calc(1.5 * var(--font-padding-md));
+    --font-padding-xxl: calc(2 * var(--font-padding-md));
+    
+    --border-radius: calc( 2 * var(--unit)) ;
+
+    --color-darkblue: rgb(30, 3, 66);
+    --color-blue:rgb(14, 70, 163);
+    --color-lightblue:rgb(154, 200, 205);
+    --color-grayblue:rgb(225, 247, 245);
 
 }
