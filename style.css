@@ -1,27 +1,39 @@
-.nav-item{
-padding-left: var(--padding);
-padding-right: var(--padding);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.container-fluid{
-background-color:var(--color-blue) ;
 
-}
-.nav-item-ruby,.nav-item-phyton,.nav-item-javascript,.nav-item-java  {
-
-background-color: var(--color-lightblue);
-font-size: var(--font-size-xl);
- 
-}
-.nav-item-java{
-border-top-left-radius: var(--border-radius) ;
-border-bottom-left-radius: var(--border-radius) ;
-}
-.navbar-brand{
-color:  var(--color-grayblue);
-font-size: var(--font-size-xxl);
-
-}
-.navbar-brand:hover{
-    color:  var(--color-lightblue);
+.navbar {
+    background-color: var(--color-blue);
+    text-align: center;
+    padding: var(--padding-md);
+  }
+  .navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-li {
+    margin-left:  var(--margin-xxl);
+    margin-right: var(--margin-xxl);
+    position: relative;
+  }
+  .navbar-ruby, .navbar-phyton, .navbar-main, .navbar-java, .navbar-javascript {
+    text-decoration: none;
+    color: var(--color-lightblue);
+    font-size: var(--font-size-md);
+    display: block;
     
-    }
+  }
+  .navbar-ruby:hover, .navbar-phyton:hover, .navbar-main:hover, .navbar-java:hover, .navbar-javascript:hover {
+    color: var(--color-grayblue);
+  }
+  /* 
+  
+  padding: 10px 15px;
+  
+
+  */

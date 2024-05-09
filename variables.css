@@ -15,10 +15,15 @@
     --widht-4: var(--unit) ;
 
     
-    --font-padding-xs: calc(0.5 * var(--font-padding-md));
-    --font-padding-md: var(--unit);
-    --font-padding-xl: calc(1.5 * var(--font-padding-md));
-    --font-padding-xxl: calc(2 * var(--font-padding-md));
+    --padding-xs: calc(0.5 * var(--padding-md));
+    --padding-md: var(--unit);
+    --padding-xl: calc(2 * var(--padding-md));
+    --padding-xxl: calc(4 * var(--padding-md));
+
+    --margin-xs: calc(0.5 * var(--margin-md));
+    --margin-md: var(--unit);
+    --margin-xl: calc(2 * var(--margin-md));
+    --margin-xxl: calc(4 * var(--margin-md));
     
     --border-radius: calc( 2 * var(--unit)) ;
 
