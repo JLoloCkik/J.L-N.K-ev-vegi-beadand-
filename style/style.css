@@ -1,0 +1,10 @@
+.title{
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    margin-bottom: var(--font-size-large);
+}
+.progress-display{
+    font-size: var(--font-size-md);
+   
+    margin-top: var(--font-size-large);
+}
