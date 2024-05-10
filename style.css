@@ -20,7 +20,10 @@ body {
     margin-left:  var(--margin-xxl);
     margin-right: var(--margin-xxl);
     position: relative;
+    text-align: center;
+    
   }
+
   .navbar-ruby, .navbar-phyton, .navbar-main, .navbar-java, .navbar-javascript {
     text-decoration: none;
     color: var(--color-lightblue);
@@ -29,18 +32,38 @@ body {
     
   }
   .navbar-ruby:hover, .navbar-phyton:hover, .navbar-main:hover, .navbar-java:hover, .navbar-javascript:hover {
-    color: var(--color-grayblue);
+    color: var(--color-darkblue);
   }
 
   .navbar-main{
     font-weight: bold;
     text-transform: uppercase;
-    font-size: var(--font-size-xl) !important ;
+    font-size: var(--font-size-md) !important ;
+    
     }
+
+    .navbar-li>a{
+
+text-align: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+
+    }
+
+
+.navbar-javascript-img{
+
+
+
+
+
+
+}
 
   /* 
   
   padding: 10px 15px;
   
-
+google fonts
   */
