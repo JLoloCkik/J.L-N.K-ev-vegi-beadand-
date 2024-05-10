@@ -8,7 +8,7 @@ pre[class*="language-"] {
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     font-size: var(--font-size-md);
     text-align: left;
-    white-space: pre;
+    white-space: pre-line;;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
@@ -20,6 +20,7 @@ pre[class*="language-"] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
+    max-width: 1000px;
 }
 code[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
@@ -42,9 +43,10 @@ pre[class*="language-"]::selection {
     }
 }
 pre[class*="language-"] {
-    padding: 1em;
+    padding: var(--font-size-md);
     margin: 0.5em 0;
     overflow: auto;
+    width: var(--widht-full));
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
