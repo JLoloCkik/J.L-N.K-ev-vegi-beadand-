@@ -6,50 +6,222 @@
     <link rel="stylesheet" href="style/variables.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/link.css">
+    <link rel="stylesheet" href="style/table.css">
+    <link rel="stylesheet" href="style/semantic_tag.css">
     
     <link href="style/prism.css" rel="stylesheet" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <section>
+    
         <div class="container-fluid row">
             <div class="col-3">
-                
             </div>
             <div class="col">
-            <p class="progress-display"><a href="index.html">Home</a> / <a href="index.html">Ruby</a> / Loops</p>
-            <p class="title">Loops</p>
-            <p class="second-title">For Loop</p>
-            <pre><code class="language-ruby">for i in 1..5 do
-            puts "Message number #{i}"
-            end
-            </code></pre>
-            <p class="third-title">Output</p>
-            <pre><code class="language-ruby">Message number 1
-            Message number 2
-            Message number 3
-            Message number 4
-            Message number 5
-            </code></pre>
-            <p class="second-title">While Loops</p>
-            <pre><code class="language-ruby">i = 1
-                while i <= 5 do
-                  puts "Message number #{i}"
-                  i = i + 1
-                end
-                </code></pre>
-            <p class="third-title">Output</p>
-            <pre><code class="language-ruby">Message number 1
-                Message number 2
-                Message number 3
-                Message number 4
-                Message number 5
-                </code></pre>
+                <p class="progress-display"><a href="index.html">Home</a> / <a href="ruby-card.html">Ruby</a> / Loops</p>
+                <p class="title">Loops</p>
+                <p class="second-title">For Loop</p>
+                <pre>
+                    <code class="language-ruby">
+                        for i in 1..5 do
+                            puts "Message number #{i}"
+                        end
+                    </code>
+                </pre>
+                <address>
+                    <ul>
+                        <li>A for kulcsszó egy ciklus kezdetét jelzi.</li>
+                        <li>i a mi változónk.</li>
+                        <li>Az in kulcsszó jelöli a számok tartományát, amelyen át akarunk lépni.</li>
+                        <li>A do kulcsszó jelzi az ismétlendő utasításokat.</li>
+                    </ul>
+                </address>
+                <p class="third-title">Output</p>
+                <pre>
+                    <code class="language-ruby">
+                        Message number 1
+                        Message number 2
+                        Message number 3
+                        Message number 4
+                        Message number 5
+                    </code>
+                </pre>
+                <p class="second-title">While Loops</p>
+                <pre>
+                    <code class="language-ruby">
+                        i = 1
+                        while i <   = 5 do
+                          puts "Message number #{i}"
+                          i = i + 1
+                        end
+                    </code>
+                </pre>
+                    <address>
+                        <ul>
+                            <li>A while kulcsszó egy ciklus kezdetét jelzi.</li>
+                            <li>i <= 5 azt jelzi, hogy a ciklus addig folytatódik, amíg i kisebb vagy egyenlő 5-nél.</li>
+                            <li>A do kulcsszó jelzi az ismétlendő utasításokat.</li>
+                            <li>Az end kulcsszó a ciklus végét jelzi.</li>
+                        </ul>
+                    </address>
+                <p class="third-title">Output</p>
+                <pre>
+                    <code class="language-ruby">
+                        Message number 1
+                        Message number 2
+                        Message number 3
+                        Message number 4
+                        Message number 5
+                    </code>
+                </pre>
+                <p class="second-title">Do…While Loops</p>
+                <pre>
+                    <code class="language-ruby">
+                        i = 1
+        
+                        loop do
+                            puts "Message number #{i}"
+        
+                            i = i + 1
+                            if i == 6
+                                break
+                            end
+                        end
+                    </code>
+                </pre>
+                <address>
+                    <ul>
+                        <li>A loop kulcsszó egy ciklus kezdetét jelzi.</li>
+                        <li>if i == 6 az a feltétel, amely megszakítja a hurkot.</li>
+                        <li>A do kulcsszó jelzi az ismétlendő utasításokat.</li>
+                        <li>Az end kulcsszó a ciklus végét jelzi.</li>
+                        <li>A break kulcsszó a ciklus végét jelzi.</li>
+                    </ul>
+                </address>
+                <p class="third-title">Output</p>
+                <pre>
+                    <code class="language-ruby">
+                        Message number 1
+                        Message number 2
+                        Message number 3
+                        Message number 4
+                        Message number 5
+                    </code>
+                </pre>
+                <p class="second-title">Until Loops</p>
+                <pre>
+                    <code class="language-ruby">
+                        i = 1
+        
+                        until i == 6 do
+                          puts "Message number #{i}"
+                          i = i + 1
+                        end
+                    </code>
+                </pre>
+                <address>
+                    <ul>
+                        <li>A until kulcsszó egy ciklus kezdetét jelzi.</li>
+                        <li>Az i == 6 az a feltétel, amely igaz esetben befejezi a hurkot.</li>
+                        <li>A do kulcsszó jelzi az ismétlendő utasításokat.</li>
+                        <li>Az end kulcsszó a ciklus végét jelzi.</li>
+                    </ul>
+                </address>
+                    <p class="third-title">Output</p>
+                <pre>
+                    <code class="language-ruby">
+                    Message number 1
+                    Message number 2
+                    Message number 3
+                    Message number 4
+                    Message number 5
+                    </code>
+                </pre>
+                <table>
+                    <tr>
+                        <th>Ciklus</th>
+                        <th>Egy pár fontosabb feltétel eltétel</th>
+                        <th>Syntax</th>
+                    
+                    </tr>
+                    <tr>
+                        <td>For Loop</td>
+                        <td rowspan="4">
+                            <ul>
+                                <li>while i < num</li>
+                                <li>while (1..5).include?(szam)</li>
+                                <li>until i == 6</li>
+                                <li>while (a < b) && (c > d)</li>
+                                <li>while array.include?(elem)</li>
+                                <li>until result == expected_result</li>
+                                <li>while true</li>
+                                
+                            </ul>
+                        </td>
+                        <td>
+                            <pre>
+                                <code class="language-ruby">
+                                   for változó_név [, változó...] in kifejezés [do]
+                                    
+                                       # végrehajtandó kód
+                                    
+                                    end
+                                </code>
+                            </pre>
+                        </td>
+  
+                    </tr>
+                    <tr>
+                        <td>While Loops</td>
+                        <td>
+                            <pre>
+                                <code class="language-ruby">
+                                    while feltétel [do]
+                                     # végrehajtandó kód
+                                    end
+                                </code>
+                            </pre>
+                        </td>
 
+                        
+                    </tr>
+                    <tr>
+                        <td>Do…While Loops</td>
+                        <td>
+                            <pre>
+                                <code class="language-ruby">
+                                    loop do
+
+                                     # végrehajtandó kód
+                                    
+                                    break if Logikai_kifejezés
+                                    
+                                    end
+                                </code>
+                            </pre>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Until Loops</td>
+                        <td>
+                            <pre>
+                                <code class="language-ruby">
+                                    until feltételes [do]
+
+                                      # végrehajtandó kód
+                                    
+                                    end
+                                </code>
+                            </pre>
+                        </td>
+
+                    </tr>
+                </table>
             </div>
-            </div>
-    </section>
+        </div>
+        
     
 
     <script src="prism.js"></script>
