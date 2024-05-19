@@ -13,8 +13,8 @@
     --widht-2: calc(0.5 * var(--widht-4)) ;
     --widht-3: calc(0.75 * var(--widht-4)) ;
     --widht-4: var(--unit) ;
-    --widht-5: calc(15 * var(--widht-4)) ;
-    --widht-6: calc(35 * var(--widht-4)) ;
+    --widht-5: calc(150 * var(--widht-4)) ;
+    --widht-6: calc(300 * var(--widht-4)) ;
    
     
     --padding-xs: calc(0.5 * var(--padding-md));
