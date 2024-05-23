@@ -8,7 +8,7 @@ background-attachment: fixed;
 background-position: center;
 }
 
-.navbar-saját{
+.navbar-sajat{
     background-color: var(--color-blue);
     text-align: center;
     padding: var(--padding-md);
@@ -29,11 +29,7 @@ background-position: center;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .navbar-li {
-    margin: 0 var(--padding-sm);
-  }
-  
+
   .navbar-li a {
     color: white;
     text-decoration: none;
@@ -46,7 +42,7 @@ background-position: center;
     border-radius: 4px;
   }
   
-  /* Responsive Design */
+  /* Responsive  */
   @media (max-width: 768px) {
     .navbar-ul {
       flex-direction: column;
@@ -65,8 +61,7 @@ background-position: center;
     justify-content: center;
   }
   .navbar-li {
-    margin-left:  var(--margin-xxl);
-    margin-right: var(--margin-xxl);
+  width: 20%;
     position: relative;
     text-align: center;
     
@@ -139,18 +134,27 @@ footer{
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;}
+  /* margin-bottom: 20px; */
+}
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid var( --color-blue);
     padding: 12px;
     text-align: left;
+    text-align: center;
 }
 th {
-  background-color: #f2f2f2;
+  background-color: var( --color-blue);
+  text-align: center;
 }
 .section-title {
-  background-color: #e9ecef;
+  background-color: var( --color-blue);
   font-weight: bold;
+}
+.img-fluid{
+
+height: auto;
+width: 100%;
+
 }
    /* .card-menu {
       width:var(--widht-6) ;
