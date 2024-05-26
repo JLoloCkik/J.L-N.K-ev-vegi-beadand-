@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="../style/prism.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid row">
+        <div class="col-2"></div>
+        <div class="col">
+            <p class="progress-display"><a href="../index.html">Home</a> / <a href="python-card.html">JavaScript</a> / Loops</p>
+            <p class="title">Loops </p>
+
+            <p class="second-title">For Loop</p>
+            <pre>
+                <code class="language-javascript">
+                    for (let i = 1; i &lt;= 5; i++) {
+                        console.log(`Message number ${i}`);
+                    }
+                </code>
+            </pre>
+            <address>
+                <ul>
+                    <li>A `for` kulcsszó egy ciklus kezdetét jelzi.</li>
+                    <li>`let i = 1` inicializálja a ciklusváltozót.</li>
+                    <li>`i &lt;= 5` a ciklusfeltétel, a ciklus addig fut, amíg igaz.</li>
+                    <li>`i++` növeli a ciklusváltozót minden iteráció után.</li>
+                </ul>
+            </address>
+            <p class="third-title">Output</p>
+            <pre>
+                <code class="language-javascript">
+                    Message number 1
+                    Message number 2
+                    Message number 3
+                    Message number 4
+                    Message number 5
+                </code>
+            </pre>
+
+            <p class="second-title">While Loop</p>
+            <pre>
+                <code class="language-javascript">
+                    let i = 1;
+                    while (i &lt;= 5) {
+                        console.log(`Message number ${i}`);
+                        i++;
+                    }
+                </code>
+            </pre>
+            <address>
+                <ul>
+                    <li>A `while` kulcsszó egy ciklust jelez.</li>
+                    <li>`i &lt;= 5` a ciklusfeltétel.</li>
+                    <li>`i++` növeli a ciklusváltozót minden iteráció után.</li>
+                </ul>
+            </address>
+            <p class="third-title">Output</p>
+            <pre>
+                <code class="language-javascript">
+                    Message number 1
+                    Message number 2
+                    Message number 3
+                    Message number 4
+                    Message number 5
+                </code>
+            </pre>
+
+            <p class="second-title">Do...While Loop</p>
+            <pre>
+                <code class="language-javascript">
+                    let i = 1;
+                    do {
+                        console.log(`Message number ${i}`);
+                        i++;
+                    } while (i &lt;= 5); 
+                </code>
+            </pre>
+            <address>
+                <ul>
+                    <li>A `do...while` ciklus legalább egyszer lefut, majd ellenőrzi a feltételt.</li>
+                    <li>`i &lt;= 5` a ciklusfeltétel.</li>
+                    <li>`i++` növeli a ciklusváltozót minden iteráció után.</li>
+                </ul>
+            </address>
+            <p class="third-title">Output</p>
+            <pre>
+                <code class="language-javascript">
+                    Message number 1
+                    Message number 2
+                    Message number 3
+                    Message number 4
+                    Message number 5
+                </code>
+            </pre>
+
+
+            <table>
+                <tr>
+                    <th>Ciklus</th>
+                    <th>Egy pár fontosabb feltétel eltétel</th>
+                    <th>Syntax</th>
+                </tr>
+                <tr>
+                    <td>For Loop</td>
+                    <td rowspan="3">
+                        <ul>
+                            <li>while (i &lt; num)</li>
+                            <li>for (let szam of [1, 2, 3, 4, 5])</li>
+                            <li>while (i != 6)</li>
+                            <li>while ((a &lt; b) && (c > d))</li>
+                            <li>while (array.includes(elem))</li>
+                            <li>while (result !== expected_result)</li>
+                            <li>while (true)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <pre>
+                            <code class="language-javascript">
+                                for (inicializálás; feltétel; frissítés) {
+                                    // végrehajtandó kód
+                                }
+                            </code>
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>While Loop</td>
+                    <td>
+                        <pre>
+                            <code class="language-javascript">
+                                while (feltétel) {
+                                    // végrehajtandó kód
+                                }
+                            </code>
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Do...While Loop</td>
+                    <td>
+                        <pre>
+                            <code class="language-javascript">
+                                do {
+                                    // végrehajtandó kód
+                                } while (feltétel);
+                            </code>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
