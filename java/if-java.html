@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java If-Else</title>
+    <link href="../style/style.css" rel="stylesheet">
+    <link href="../style/prism.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid row">
+    <div class="col-3"></div>
+    <div class="col">
+        <p class="progress-display"><a href="../index.html">Home</a> / <a href="java-card.html">Java</a> / If Else</p>
+        <p class="title">If Else</p>
+        <p class="second-title">If</p>
+        <pre>
+            <code class="language-java">
+                int pen = 10;
+                if (pen &lt; 2) {
+                    System.out.println("No pens are left in the shop.");
+                }
+            </code>
+        </pre>
+        <address>
+            <ul>
+                <li>Java-ban az `if` utasítás hasonlóan működik, mint Rubyban.</li>
+                <li>A feltételt zárójelek közé kell tenni `()`.</li>
+                <li>A végrehajtandó kódot kapcsos zárójelek közé kell tenni `{}`.</li>
+            </ul>
+        </address>
+
+        <pre>
+            <code class="language-java">
+                int a = 22;
+                if (a >= 18) {
+                    System.out.println("You are eligible for voting");
+                } else {
+                    System.out.println("You are not eligible for voting");
+                }
+            </code>
+        </pre>
+
+        <p class="second-title">Unless (No Direct Equivalent in Java)</p>
+        <address>
+            <p>Java-ban nincs közvetlen megfelelője az `unless`-nek. Használhatjuk helyette a `!` (not) operátort az `if` feltételben:</p>
+        </address>
+        <pre>
+            <code class="language-java">
+                int x = 1;
+                if (!(x >= 2)) { // Az !(x >= 2) ugyanaz, mint az x < 2
+                    System.out.println("x is less than 2");
+                } else {
+                    System.out.println("x is greater than 2");
+                }
+            </code>
+        </pre>
+
+        <p class="second-title">Switch</p>
+        <pre>
+            <code class="language-java">
+                class Main {
+                    public static void main(String[] args) {
+                  
+                      int number = 44;
+                      String size;
+                  
+                      // switch statement to check size
+                      switch (number) {
+                  
+                        case 29:
+                          size = "Small";
+                          break;
+                  
+                        case 42:
+                          size = "Medium";
+                          break;
+                  
+                        // match the value of week
+                        case 44:
+                          size = "Large";
+                          break;
+                  
+                        case 48:
+                          size = "Extra Large";
+                          break;
+                        
+                        default:
+                          size = "Unknown";
+                          break;
+                  
+                      }
+                      System.out.println("Size: " + size);
+                    }
+                }
+                # => Size: Large
+            </code>
+        </pre>
+        <p class="second-title">Comparison Operators</p>
+        <table>
+            <tr>
+                <th>Szimbólum</th>
+                <th>Leírás</th>
+            </tr>
+            <tr>
+                <td>></td>
+                <td>A „nagyobb, mint” szimbólum a nagyobb érték feltüntetésére szolgál.</td>
+            </tr>
+            <tr>
+                <td>&lt;&lt;</td>
+                <td>A „kisebb, mint” szimbólum a kisebb értéket jelzi.</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>A „nem egyenlő” szimbólum azt mutatja, hogy két érték nem egyenlő.</td>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>Az „egyenlő” szimbólum azt mutatja, hogy két érték egyenlő.</td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>A „kisebb, mint egyenlő” szimbólum azt mutatja, hogy az érték kisebb vagy egyenlő.</td>
+            </tr>
+            <tr>
+                <td>>=</td>
+                <td>A „nagyobb, mint egyenlő” szimbólum azt mutatja, hogy az érték nagyobb vagy egyenlő.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="../js/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
