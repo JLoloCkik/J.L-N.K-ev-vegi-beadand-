@@ -1,61 +1,120 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instructions-and-Appendices</title>
-    <link  href="../style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
     <link href="../style/prism.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<div class="container-fluid row">
-    <div class="col-2">
+    <div class="container-fluid row">
+        <div class="col-2"></div>
+        <div class="col">
+            <p class="progress-display"><a href="../index.html">Home</a> / <a href="ruby-card.html">JavaScript</a> / Instructions and Appendices</p>
+            <p class="title">Instructions </p>
+            <p class="second-title">Variables</p>
+            <address>
+                <ul>
+                    <li>JavaScriptben a `var`, `let` vagy `const` kulcsszavakkal deklarálhatunk változókat.</li>
+                    <li>A változó típusa dinamikus, azaz futásidőben változhat.</li>
+                </ul>
+            </address>
+            <pre>
+                <code class="language-javascript">
+                    let a = 42;      // 'a' egy szám
+                    let b = "Hello"; // 'b' egy szöveg
+                    let c = [1, 2, 3]; // 'c' egy tömb (array)
+                    let d = { name: "Alice", age: 30 }; // 'd' egy objektum (hasonló a Ruby hash-hez)
+                </code>
+            </pre>
 
+            <p class="second-title">Methods</p>
+            <address>
+                <ul>
+                    <li>JavaScriptben a `function` kulcsszóval definiálunk függvényeket.</li>
+                    <li>A függvény törzse tartalmazza azokat az utasításokat, amiket végre akarunk hajtani.</li>
+                    <li>Az opcionális `return` utasítással adhatunk vissza értéket a függvényből.</li>
+                </ul>
+            </address>
+            <pre>
+                <code class="language-javascript">
+                    function hi() {
+                        console.log("Hello World!");
+                    }
+                    hi(); // => Hello World!
+                </code>
+            </pre>
+            <pre>
+                <code class="language-javascript">
+                    function hi(name) {
+                        console.log(`Hello ${name}!`); // Template literálok használata
+                    }
+                    hi("Jhony"); // => Hello Jhony!
+                </code>
+            </pre>
+
+            <p class="second-title">Object-Oriented Programming</p>
+            <address>
+                <ul>
+                    <li>JavaScriptben az OOP prototípus-alapú, ami különbözik a Java osztályalapú OOP-jétől.</li>
+                    <li>Az objektumok prototípusokból örökölnek tulajdonságokat és metódusokat.</li>
+                </ul>
+            </address>
+            <address>
+                <ul>
+                    <li>A `class` kulcsszó (ES6+) egy kényelmesebb szintaxist biztosít az objektumok létrehozásához.</li>
+                    <li>A konstruktor (`constructor`) metódus létrehozza az objektumot, és beállítja az attribútumait.</li>
+                    <li>Az attribútumok az objektum adatait tárolják (pl. `nev`, `kor`).</li>
+                    <li>Az objektum metódusai az objektum viselkedését határozzák meg (pl. `koszon`, `mutatkozzBe`).</li>
+                </ul>
+            </address>
+            <pre>
+                <code class="language-javascript">
+                    class Greeter {
+                        constructor(name = "World") {
+                            this.name = name;
+                        }
+
+                        sayHi() {
+                            console.log(`Hi ${this.name}!`);
+                        }
+
+                        sayBye() {
+                            console.log(`Bye ${this.name}, come back soon.`);
+                        }
+                    }
+                </code>
+            </pre>
+            <pre>
+                <code class="language-javascript">
+                    class Box {
+                        constructor(w, h) {
+                            this.width = w;
+                            this.height = h;
+                        }
+
+                        printWidth() {
+                            return this.width;
+                        }
+
+                        printHeight() {
+                            return this.height;
+                        }
+                    }
+
+                    const box = new Box(10, 20);
+                    const x = box.printWidth();
+                    const y = box.printHeight();
+
+                    console.log("Width of the box is : " + x);
+                    console.log("Height of the box is : " + y);
+                </code>
+            </pre>
+        </div>
     </div>
-    <div class="col">
-        <p class="progress-display"><a href="../index.html">Home</a> / <a href="ruby-card.html">Python</a> / Hash and array</p>
-        <p class="title">Instructions</p>
-        <p class="second-title">Methode</p>
-        <pre>
-                    <code class="language-ruby">
-                    def hi
-                      puts "Hello World!"
-                    end
-                    hi #=> Hello World!
-                    </code>
-        </pre>
-        <pre>
-                    <code class="language-ruby">
-                    def hi(name)
-                      puts "Hello #{name}!"
-                    end
-                     hi ("Jhony")#=> Hello Jhony!
-                    </code>
-        </pre>
-
-        <pre>
-                    <code class="language-ruby">
-                     class Greeter
-                        def initialize(name = "World")
-                          @name = name
-                        end
-                        def say_hi
-                          puts "Hi #{@name}!"
-                        end
-                        def say_bye
-                          puts "Bye #{@name}, come back soon."
-                        end
-                    end
-
-                    </code>
-        </pre>
-
-
-    </div>
-</div>
-<script src="../js/prism.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="../js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
