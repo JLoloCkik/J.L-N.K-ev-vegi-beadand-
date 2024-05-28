@@ -142,13 +142,10 @@ a{
 /* Media */
 
 .body-menu {
+    padding: 0 !important;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-image:url("img/background-img.jpg") !important;
     background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
 }
 
 .navbar-sajat{
@@ -276,6 +273,10 @@ footer {
   background-color: var(--color-blue);
   font-size: var(--font-size-xl);
   padding: 20px;
+  bottom: 0;
+}
+.bottom{
+  padding: 36.25px;
 }
 footer > ul > li {
   padding: 0px 120px;
